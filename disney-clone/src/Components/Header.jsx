@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../assets/Images/logo.png'
 import { HiHome,HiMagnifyingGlass,HiStar,HiPlayCircle,HiTv } from "react-icons/hi2";
 import { HiPlus,HiDotsVertical} from "react-icons/hi";
-import HeaderItem from './HeaderItem';
+import HeaderEachItem from './HeaderEachItem';
 
 
 
@@ -41,7 +41,7 @@ function Header() {
 
       <div class='flex items-center gap-8'>
         <img src={logo} class="w-[80px] object-cover" />
-        {menu.map((item)=><HeaderItem name={item.name} Icon={item.icon}/>)}
+        {menu.map((item)=><HeaderEachItem name={item.name} Icon={item.icon}/>)}
       </div>  
 
       <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" class='w-[40px] rounded-full' />

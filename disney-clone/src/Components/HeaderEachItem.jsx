@@ -1,6 +1,6 @@
 import React from 'react'
 
-function HeaderItem({name,Icon}) {
+function HeaderEachItem({name,Icon}) {
   return (
     <div class= 'text-white flex items-center gap-3 font-semibold text-[18px] cursor-pointer'> 
         <Icon />
@@ -9,4 +9,4 @@ function HeaderItem({name,Icon}) {
   )
 }
 
-export default HeaderItem
+export default HeaderEachItem
