@@ -40,8 +40,13 @@ function Header() {
     <div class='flex items-center justify-between p-5'>
 
       <div class='flex items-center gap-8'>
-        <img src={logo} class="w-[80px] object-cover" />
+        <img src={logo} class="w-[115px] object-cover" />
+        <div class='gap-8 items-center hidden md:flex '>
         {menu.map((item)=><HeaderEachItem name={item.name} Icon={item.icon}/>)}
+        </div>
+        <div class='flex gap-8 items-center md:hidden '>
+        {menu.map((item)=><HeaderEachItem name={item.name} Icon={item.icon}/>)}
+        </div> 
       </div>  
 
       <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" class='w-[40px] rounded-full' />
