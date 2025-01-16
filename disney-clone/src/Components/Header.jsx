@@ -45,8 +45,14 @@ function Header() {
         {menu.map((item)=><HeaderEachItem name={item.name} Icon={item.icon}/>)}
         </div>
         <div class='flex gap-8 items-center md:hidden '>
-        {menu.map((item)=><HeaderEachItem name={item.name} Icon={item.icon}/>)}
+        {menu.map((item, index )=> index<3&& <HeaderEachItem name={item.name} Icon={item.icon}/>)}
+
+        <div md:hidden>
+          <HeaderEachItem name={''} Icon={HiDotsVertical}/>
+        </div>
+
         </div> 
+        
       </div>  
 
       <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" class='w-[40px] rounded-full' />
